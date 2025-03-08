@@ -1,18 +1,22 @@
-# Base class
+# Define a base class called Vehicle
 class Vehicle:
     def start(self):
         return "Vehicle is starting..."
 
-# Subclass Car
+# Define a subclass called Car that inherits from Vehicle
 class Car(Vehicle):
-    def start(self):
+    def start(self):  # Overriding the start method
         return "Car is starting with a roar!"
 
-# Subclass Bike
+# Define a subclass called Bike that also inherits from Vehicle
 class Bike(Vehicle):
-    def start(self):
+    def start(self):  # Overriding the start method
         return "Bike is starting with a vroom!"
 
-# Testing the classes
+# Create instances of Car and Bike
 car = Car()
 bike = Bike()
+
+# Call the start method on both objects
+print(car.start())  # Output: Car is starting with a roar!
+print(bike.start())  # Output: Bike is starting with a vroom!
