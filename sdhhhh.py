@@ -1,0 +1,1 @@
+print(list(map(lambda c: c * 9/5 + 32, [23, 46, 89])))
